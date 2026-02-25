@@ -11,23 +11,23 @@
         <div class="container">
 
                 <h2>Formulir Pendaftaran Anggota Karang Taruna</h2>
-    <form action="">
+    <form onsubmit="return validasiNama()">
         <label for="fname">Nama Lengkap</label>
-        <input type="text" id= "fname" name="firstname" placeholder="Nama Kamu...">
+        <input type="text" id= "nama" name="firstname" placeholder="Nama Kamu..." required>
 <br>
         <label for="alamat">Alamat</label>
-        <input type="text" id= "alamat" name="firstname" placeholder="Alamat Kamu...">
+        <input type="text" id= "alamat" name="firstname" placeholder="Alamat Kamu..." required>
 <br>
         <label for="tempat">Tempat Lahir</label>
-        <input type="text" id= "tempat" name="firstname" placeholder="Tempat Lahir Kamu...">
+        <input type="text" id= "tempat" name="firstname" placeholder="Tempat Lahir Kamu..." required>
 <br>
         <label for="tanggal">Tanggal Lahir</label>
-        <input type="date" id= "tanggal" name="firstname" placeholder="Tanggal Lahir...">
+        <input type="date" id= "tanggal" name="firstname" placeholder="Tanggal Lahir..." required>
 
         <br>
         <label for="jenis" id="rd">Jenis Kelamin : </label>
         
-        <input type="radio" id="laki" name="radiobtn">
+        <input type="radio" id="laki" name="radiobtn"required>
         <label for="laki" id="rd">Laki Laki</label>
 
          <input type="radio" id="pr" name="radiobtn">
@@ -41,5 +41,7 @@
 
 
     </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
